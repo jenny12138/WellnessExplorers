@@ -143,11 +143,11 @@ section.about
 .ProfilePic
 {
   left: 30%;
-  height: 400px;
+  height: 300px;
   //width: 250px;
   display: inline-block;
   text-align: center;
-  padding: 2px;
+  //padding: 2px;
   margin: auto;
 }
 
@@ -338,7 +338,6 @@ footer .endnote
   {
     font-family: playfair-display,serif;
     font-weight: 400 !important;
-    font-style: italic !important;
     position: absolute;
     top: 170px;
     margin: 0 auto;

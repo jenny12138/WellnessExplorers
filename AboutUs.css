@@ -156,9 +156,8 @@ header .navigationBar a:hover
 img 
 {
   width: 300px;
-  height:400px;
-  //width: 59%;
-  margin: 20px;
+  //height:400px;
+  margin: 25px;
 }
 
 .intro h1
@@ -169,7 +168,7 @@ img
 
 .intro h3
 {
-  font-size: 12px;
+  font-size: 14px;
   margin: 10px;
 }
 

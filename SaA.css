@@ -154,6 +154,7 @@ header .navigationBar a:hover
 .container img 
 {
   height: 100px;
+  margin: 40px;
 }
 
 /*===== // Contact Form =====*/
