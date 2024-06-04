@@ -1,64 +1,89 @@
 <!--@Wellness Explorers-->
 <!DOCTYPE html>
-
 <head>
-    <title>Wellness Explorers</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Allows viewing on mobile-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!--Display in highest res-->
-    <link rel="stylesheet" href="Participants.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ute6kho.css">
+  <title>Wellness Explorers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Allows viewing on mobile-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!--Display in highest res-->
+  <link rel="stylesheet" href="Participants.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ute6kho.css">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
 
-    <div style="z-index: 100;" class="navigationBar">
-      <a href="index.html">Home</a>
-      <a href="AboutUs.html">About Us</a>
-      <a href="Curriculum.html">Curriculum</a>
-      <a href="SaA.html">Sponsors and Advisors</a>
-      <a href="Participants.html">Participants</a>
-      <a href="Volunteers.html">Volunteers</a>
-      <a href="ContactMe.html">Contact</a>
+<!-- Top Navigation Menu: Mobile -->
+<div class="topnav">
+
+  <a href="index.html" class="active"></a>
+  <div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="Curriculum.html">Curriculum</a>
+    <a href="SaA.html">Sponsors and Advisors</a>
+    <a href="Participants.html">Participants</a>
+    <a href="Volunteers.html">Volunteers</a>
+    <a href="ContactMe.html">Contact</a>
+  </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- Top Navigation Menu: Mobile -->
+<div style="z-index: 100;" class="topnav_long">
+  <a href="index.html">Home</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="Curriculum.html">Curriculum</a>
+  <a href="SaA.html">Sponsors and Advisors</a>
+  <a href="Participants.html">Participants</a>
+  <a href="Volunteers.html">Volunteers</a>
+  <a href="ContactMe.html">Contact</a>
+</div>
+
+
+<header>
+  <h1 class="name">Wellness Explorers</h1>
+  <img src="images/logo.png" class="main-logo" alt="Logo">
+  <h4 class ="longbio">Building healthy habits through adventures in nature!</h4>
+  <nav class="social-nav">
+    <ul>
+      <li>
+        <a href="mailto: WellnessExplorersWalk@gmail.com" target="_blank" class="sn-email"></a> <!--target="_blanks" opens website in a new tab-->
+      </li>
+      <li>
+        <a href="https://www.instagram.com/WellnessExplorersWalk" target="_blank" class="sn-github"></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61559972639012" target="_blank" class="sn-linkedin"></a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+  <div class="container">
+      <h1 id="contactMe">Participant Sign Up</h1>
+      <h3 id="contactMeText">In 2024, our program will run weekly in the summer! Please check back here in 1-2 months to sign up!</h3>
     </div>
+</main>
 
-        <h1 class="name">Wellness Explorers</h1>
-        <h4 class ="longbio">Building healthy habits through adventures in nature!</h4>
-        <h4 class ="shortbio">Building healthy habits through adventures in nature!!</h4>
-        <nav class="social-nav">
-          <ul>
-            <li>
-              <a href="mailto: WellnessExplorersWalk@gmail.com" target="_blank" class="sn-email"></a> <!--target="_blanks" opens website in a new tab-->
-            </li>
-            <li>
-              <a href="https://www.instagram.com/WellnessExplorersWalk" target="_blank" class="sn-github"></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/profile.php?id=61559972639012" target="_blank" class="sn-linkedin"></a>
-            </li>
-          </ul>
-        </nav>
-    </header>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
-
-
-
-    <main>
-
-      
-        <div class="container">
-            <h1 id="contactMe">Participant Sign Up</h1>
-            <h3 id="contactMeText">In 2024, our program will run weekly in the summer! Please check back here in 1-2 months to sign up!</h3>
-          </div>
-    </main>
-
-    
-</body> 
+</body>
 
 <footer>
-  <p class="endnote"><strong>Wellness Explorers</strong></p>
-  <p class="endnote">WellnessExplorersWalk@gmail.com</p>
+  <p class="endnote"><strong>2024 Wellness Explorers</strong></p>
 </footer>
-
-</html>

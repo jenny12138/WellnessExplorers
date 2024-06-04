@@ -1,59 +1,34 @@
+/*@Jenny Zheng 2024*/
 /*@Wellness Explorers 2024*/
+
 * 
 {
     padding: 0;
     margin: 0;
-    font-family: playfair-display, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
     box-sizing: border-box;
 }
 
-header 
+header .longbio
 {
-    width: 100vw;
-    background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
-    /*background-color: rgba(10,186,181, 0.55);*/
-    height: 270px;
-    display: flex; /*defines a flex container, says that header is a flex container now*/
-    position: relative;
-    flex-direction: column;
-    justify-content: center; /*Horizontal alignment*/
-    align-items: center; /*Vertical alignment*/
-    color: rgb(33, 33, 33);
-    line-height: 400%;
-}
-
-header .name
-{
-  font-family: playfair-display, serif;
-  font-weight: 900 !important;
-  font-style: italic !important;
-  font-size: 22pt;
-  position: absolute;
-  top: 90x;
-}
-
-header .shortbio
-{
-  font-family: playfair-display,serif;
+  margin-top: 8px;
   font-weight: 400 !important;
-  font-style: italic !important;
-  position: absolute;
-  top: 160px;
 }
+
 header .social-nav 
 {
-    position: absolute;
-    bottom: -20%;
+  position: absolute;
+  bottom: -13%;
 }
   
 header .social-nav ul 
 {
-    list-style-type: none;
-    margin: 0;
+  list-style-type: none;
+  margin: 0;
 }
-  
+
 header .social-nav ul li 
 {
   display: inline-block; /*Display horizontally*/
@@ -97,32 +72,6 @@ header .social-nav .sn-linkedin
   background-size: 70%;
 }
 
-header .navigationBar
-{
-  overflow: hidden;
-  background-color: rgba(186, 148, 123, 0.5);
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-header .navigationBar a 
-{
-  float: left;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 0px 20px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-header .navigationBar a:hover 
-{
-  background: #ddd;
-  color: black;
-}
-
 #contactMe
 {
   font-weight: 900 !important;
@@ -140,122 +89,18 @@ header .navigationBar a:hover
   font-size: 11pt;
   left:50%;
   text-align: center;
-  margin: auto;
   margin-top: 0px;
   margin-bottom: 40px;
+}
+
+/* Add a background color and some padding around the form */
+.container 
+{
   width: 80%;
-}
-
-
-
-b, strong {font-weight:bold !important;}
-
-/*===== // Contact Form =====*/
-
-/*===== // Responsive Contact Form Optimization =====*/
-@media only screen and (min-width: 700px) 
-{
-  header .shortbio
-  {
-    display: none;
-  }
-  
-  header .longbio
-  {
-    font-family: playfair-display,serif;
-    font-weight: 400 !important;
-    position: absolute;
-    top: 170px;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 700px) 
-{
-  header 
-  {
-      height: 210px;
-  }
-
-  header .longbio
-  {
-    display: none;
-  }
-
-  header .shortbio
-  {
-    font-family: playfair-display,serif;
-    font-weight: 400 !important;
-    position: absolute;
-    top: 170px;
-    margin: 0 auto;
-  }
-
-  header .navigationBar
-  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    padding: 0 0;
-  }
-
-  header .navigationBar a 
-  {
-    padding: 0px 15px;
-    font-size: 15px;
-  }
-
-  header .navigationBar a:hover 
-  {
-    background: #ddd;
-    color: black;
-  }
-
-  header .name
-  {
-    font-family: playfair-display, serif;
-    font-weight: 900 !important;
-    font-style: italic !important;
-    font-size: 22pt;
-    position: absolute;
-    top: 90x;
-  }
-
-  header .shortbio
-  {
-    font-family: playfair-display,serif;
-    font-weight: 400 !important;
-    font-style: italic !important;
-    position: absolute;
-    top: 110px;
-    margin: 0 auto;
-    font-size: 13px;
-  }
-
-  header .social-nav 
-  {
-      position: absolute;
-      bottom: -23%;
-  }
-    
-  header .social-nav ul li 
-  {
-    display: inline-block; /*Display horizontally*/
-    width: 50px;
-    height: 50px;
-    margin-right: 2em;
-  }
-
-  header .social-nav ul li a 
-{
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  border: 1px solid white;
-}
-
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 footer
@@ -264,7 +109,7 @@ footer
   margin-top: 10px;
   background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
   /*background: #77A8B1;*/
-  height: 50px;
+  height: 30px;
   position: relative;
   flex-direction: column;
   justify-content: center; /*Horizontal alignment*/
@@ -275,4 +120,164 @@ footer .endnote
 {
   text-align: center;
   font-size: 8pt;
+}
+
+b, strong {font-weight:bold !important;}
+
+
+body 
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*===== // Screen Size Optimization =====*/
+@media only screen and (min-width: 1000px) 
+{
+  .topnav
+  {
+    display: none;
+  }
+
+  .topnav_long
+  {
+    overflow: hidden;
+    background-color: rgba(186, 148, 123, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex; /*defines a flex container, says that header is a flex container now*/
+    position: relative;
+    flex-direction: row;
+    align-items: center; /*Vertical alignment*/
+    color: rgb(33, 33, 33);
+    line-height: 400%;
+  }
+
+  .topnav_long a 
+  {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav_long a:hover 
+  {
+    background: #ddd;
+    color: black;
+  }
+
+  header 
+  {
+      background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
+      height: 290px;
+      display: flex; /*defines a flex container, says that header is a flex container now*/
+      position: relative;
+      flex-direction: column;
+      justify-content: center; /*Horizontal alignment*/
+      align-items: center; /*Vertical alignment*/
+      color: rgb(33, 33, 33);
+  }
+
+  header .name
+  {
+    font-weight: 900 !important;
+    font-style: italic !important;
+    font-size: 22pt;
+  }
+
+  .main-logo
+  {
+    width: 10%;
+  }
+
+}
+
+@media only screen and (max-width: 1000px)
+{
+  .topnav_long
+  {
+    display: none;
+  }
+
+  .topnav 
+  {
+    overflow: hidden;
+    background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
+    background-color: rgba(186, 148, 123, 0.5);
+    position: relative;
+  }
+
+  .topnav #myLinks 
+  {
+    display: none;
+  }
+
+  .topnav a 
+  {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    background-color: rgba(186, 148, 123, 0.5);
+  }
+
+  .active 
+  {
+    background-color: rgba(186, 148, 123, 0.5);
+    height: 45px;
+  }
+
+  .topnav a.icon 
+  {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover 
+  {
+    background-color: #ddd;
+    color: black;
+  }
+
+  header .name
+  {
+    display: none;
+  }
+
+  header 
+  {
+    background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
+    height: 250px;
+    display: flex; /*defines a flex container, says that header is a flex container now*/
+    position: relative;
+    flex-direction: column;
+    justify-content: center; /*Horizontal alignment*/
+    align-items: center; /*Vertical alignment*/
+    color: rgb(33, 33, 33);
+  }
+
+  .main-logo
+  {
+    width: 100px;
+  }
+
+  .pdfobject-container 
+  { 
+    height: 620px; 
+    width: 100%; 
+    margin: auto; 
+    border: 1px solid #ccc; 
+  }
+
+
 }

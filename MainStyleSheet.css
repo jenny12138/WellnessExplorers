@@ -1,59 +1,34 @@
+/*@Jenny Zheng 2024*/
 /*@Wellness Explorers 2024*/
+
 * 
 {
     padding: 0;
     margin: 0;
-    font-family: playfair-display, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
     box-sizing: border-box;
 }
 
-header 
+header .longbio
 {
-    width: 100vw;
-    background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
-    /*background-color: rgba(10,186,181, 0.55);*/
-    height: 270px;
-    display: flex; /*defines a flex container, says that header is a flex container now*/
-    position: relative;
-    flex-direction: column;
-    justify-content: center; /*Horizontal alignment*/
-    align-items: center; /*Vertical alignment*/
-    color: rgb(33, 33, 33);
-    line-height: 400%;
-}
-
-header .name
-{
-  font-family: playfair-display, serif;
-  font-weight: 900 !important;
-  font-style: italic !important;
-  font-size: 22pt;
-  position: absolute;
-  top: 90x;
-}
-
-header .shortbio
-{
-  font-family: playfair-display,serif;
+  margin-top: 8px;
   font-weight: 400 !important;
-  font-style: italic !important;
-  position: absolute;
-  top: 160px;
 }
+
 header .social-nav 
 {
-    position: absolute;
-    bottom: -20%;
+  position: absolute;
+  bottom: -13%;
 }
   
 header .social-nav ul 
 {
-    list-style-type: none;
-    margin: 0;
+  list-style-type: none;
+  margin: 0;
 }
-  
+
 header .social-nav ul li 
 {
   display: inline-block; /*Display horizontally*/
@@ -97,85 +72,36 @@ header .social-nav .sn-linkedin
   background-size: 70%;
 }
 
-header .navigationBar
-{
-  overflow: hidden;
-  background-color: rgba(186, 148, 123, 0.5);
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-header .navigationBar a 
-{
-  float: left;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 0px 20px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-header .navigationBar a:hover 
-{
-  background: #ddd;
-  color: black;
-}
-
-section.about
-{
-  margin-top: 50px;
-  background-color: white;
-  margin-bottom: 20px;
-}
-
-.about h1
+#contactMe
 {
   font-weight: 900 !important;
   font-style: italic !important;
   font-size: 18pt;
   left:50%;
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-.ProfilePic
+#contactMeText
 {
-  left: 30%;
-  height: 300px;
-  //width: 250px;
-  display: inline-block;
-  text-align: center;
-  //padding: 2px;
-  margin: auto;
+  font-weight: 400 !important;
+  font-size: 11pt;
+  left:50%;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
-.intro
+/* Add a background color and some padding around the form */
+.container 
 {
-  margin-top: 10px;
-  float: right;
-  margin-top: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-family: playfair-display, serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 9;
-  border: 0px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
 }
-
-.AboutMeContent
-{
-    background-color: white;
-    display: flex; /*Using flexbox*/
-    flex-direction: column;
-    justify-content: space-between; /*Horizontal alignment*/
-    align-items: center; /*Vertical alignment*/
-}
-
-  
-b, strong {font-weight:bold !important;}
 
 footer
 {
@@ -183,7 +109,7 @@ footer
   margin-top: 10px;
   background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
   /*background: #77A8B1;*/
-  height: 50px;
+  height: 30px;
   position: relative;
   flex-direction: column;
   justify-content: center; /*Horizontal alignment*/
@@ -196,161 +122,153 @@ footer .endnote
   font-size: 8pt;
 }
 
-@media only screen and (max-width: 700px)
+b, strong {font-weight:bold !important;}
+
+
+body 
 {
-  .AboutMeContent
-  {
-    background-color: white;
-    display: flex; /*Using flexbox*/
-    flex-direction: column;
-    justify-content: space-between; /*Horizontal alignment*/
-    align-items: center; /*Vertical alignment*/
-  }
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .intro
-  {
-    float: right;
-    width:70%;
-    margin-top: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-family: playfair-display, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 9;
-    border: 0px;
-  }
 
-  header 
-  {
-      height: 210px;
-  }
-
-  header .longbio
+/*===== // Screen Size Optimization =====*/
+@media only screen and (min-width: 1000px) 
+{
+  .topnav
   {
     display: none;
   }
 
-  header .shortbio
+  .topnav_long
   {
-    font-family: playfair-display,serif;
-    font-weight: 400 !important;
-    font-style: italic !important;
-    position: absolute;
-    top: 170px;
-    margin: 0 auto;
-  }
-
-  header .navigationBar
-  {
-    display: flex;
+    overflow: hidden;
+    background-color: rgba(186, 148, 123, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex; /*defines a flex container, says that header is a flex container now*/
+    position: relative;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    padding: 0 0;
+    align-items: center; /*Vertical alignment*/
+    color: rgb(33, 33, 33);
+    line-height: 400%;
   }
 
-  header .navigationBar a 
+  .topnav_long a 
   {
-    padding: 0px 15px;
-    font-size: 15px;
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 17px;
   }
 
-  header .navigationBar a:hover 
+  .topnav_long a:hover 
   {
     background: #ddd;
     color: black;
   }
 
+  header 
+  {
+      background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
+      height: 290px;
+      display: flex; /*defines a flex container, says that header is a flex container now*/
+      position: relative;
+      flex-direction: column;
+      justify-content: center; /*Horizontal alignment*/
+      align-items: center; /*Vertical alignment*/
+      color: rgb(33, 33, 33);
+  }
+
   header .name
   {
-    font-family: playfair-display, serif;
     font-weight: 900 !important;
     font-style: italic !important;
     font-size: 22pt;
-    position: absolute;
-    top: 90x;
   }
 
-  header .shortbio
+  .main-logo
   {
-    font-family: playfair-display,serif;
-    font-weight: 400 !important;
-    font-style: italic !important;
-    position: absolute;
-    top: 110px;
-    margin: 0 auto;
-    font-size: 13px;
+    width: 10%;
   }
 
-  header .social-nav 
-  {
-      position: absolute;
-      bottom: -23%;
-  }
-    
-  header .social-nav ul li 
-  {
-    display: inline-block; /*Display horizontally*/
-    width: 50px;
-    height: 50px;
-    margin-right: 2em;
-  }
-
-  header .social-nav ul li a 
-  {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    border: 1px solid white;
-  }
-
-  footer
-  {
-    margin-top: 10px;
-  }
 }
 
-@media only screen and (min-width: 700px) 
+@media only screen and (max-width: 1000px)
 {
-  .intro
-  {
-    float: right;
-    width:70%;
-    margin-top: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-family: playfair-display, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 9;
-    border: 0px;
-    width: 50% !important;
-  }
-
-  header .shortbio
+  .topnav_long
   {
     display: none;
   }
-  
-  header .longbio
+
+  .topnav 
   {
-    font-family: playfair-display,serif;
-    font-weight: 400 !important;
+    overflow: hidden;
+    background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
+    background-color: rgba(186, 148, 123, 0.5);
+    position: relative;
+  }
+
+  .topnav #myLinks 
+  {
+    display: none;
+  }
+
+  .topnav a 
+  {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    background-color: rgba(186, 148, 123, 0.5);
+  }
+
+  .active 
+  {
+    background-color: rgba(186, 148, 123, 0.5);
+    height: 45px;
+  }
+
+  .topnav a.icon 
+  {
+    background: black;
+    display: block;
     position: absolute;
-    top: 170px;
-    margin: 0 auto;
+    right: 0;
+    top: 0;
   }
 
-  footer
+  .topnav a:hover 
   {
-    margin-top: 10px;
+    background-color: #ddd;
+    color: black;
   }
 
-html 
-{
-    height: 100%;
-}
+  header .name
+  {
+    display: none;
+  }
+
+  header 
+  {
+    background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
+    height: 250px;
+    display: flex; /*defines a flex container, says that header is a flex container now*/
+    position: relative;
+    flex-direction: column;
+    justify-content: center; /*Horizontal alignment*/
+    align-items: center; /*Vertical alignment*/
+    color: rgb(33, 33, 33);
+  }
+
+  .main-logo
+  {
+    width: 100px;
+  }
 
 }
