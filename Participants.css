@@ -89,8 +89,8 @@ header .social-nav .sn-linkedin
   font-size: 11pt;
   left:50%;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Add a background color and some padding around the form */
@@ -184,6 +184,12 @@ body
       color: rgb(33, 33, 33);
   }
 
+  .SmallForm
+  {
+    display: none;
+  }
+
+
   header .name
   {
     font-weight: 900 !important;
@@ -241,6 +247,11 @@ body
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  .BigForm
+  {
+    display: none;
   }
 
   .topnav a:hover 

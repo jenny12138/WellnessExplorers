@@ -86,7 +86,7 @@ header .social-nav .sn-linkedin
 #contactMeText
 {
   font-weight: 400 !important;
-  font-size: 11pt;
+  font-size: 12pt;
   left:50%;
   text-align: center;
   margin-top: 0px;
@@ -247,11 +247,6 @@ body
   {
     background-color: #ddd;
     color: black;
-  }
-
-  header .name
-  {
-    display: none;
   }
 
   header 
