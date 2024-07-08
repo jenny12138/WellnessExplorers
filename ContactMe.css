@@ -280,11 +280,6 @@ body
     color: black;
   }
 
-  header .name
-  {
-    display: none;
-  }
-
   header 
   {
     background-image: url("https://64.media.tumblr.com/tumblr_lp8ewxmTVH1qemp1d.png");
