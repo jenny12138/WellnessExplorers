@@ -223,6 +223,7 @@ body
   .main-logo
   {
     width: 10%;
+    max-width: 130px;
   }
 
 }
@@ -292,7 +293,8 @@ body
 
   .main-logo
   {
-    width: 100px;
+    width: 10%;
+    max-width: 130px;
   }
 
   .self_portrait

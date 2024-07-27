@@ -86,11 +86,18 @@ header .social-nav .sn-linkedin
 #contactMeText
 {
   font-weight: 400 !important;
-  font-size: 11pt;
+  font-size: 14pt;
   left:50%;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* Add a background color and some padding around the form */
@@ -200,6 +207,7 @@ body
   .main-logo
   {
     width: 10%;
+    max-width: 130px;
   }
 
 }
@@ -274,7 +282,8 @@ body
 
   .main-logo
   {
-    width: 100px;
+    width: 10%;
+    max-width: 130px;
   }
 
 }
