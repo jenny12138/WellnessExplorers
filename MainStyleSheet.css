@@ -93,6 +93,13 @@ header .social-nav .sn-linkedin
   margin-bottom: 15px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* Add a background color and some padding around the form */
 .container 
 {
